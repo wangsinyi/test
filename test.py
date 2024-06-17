@@ -57,7 +57,8 @@ if __name__ == '__main__':
 #       description為描述
 #       tester為測試者
 #       language為測試報告使用的語系，目前僅支援zh-CN與en語系  
-#       rerun: 測試失敗或是判定Fail時重跑次數，Fail測試要是rerun設定的次數皆Fail才會判定Fail。 
+#       rerun: 測試失敗或是判定Fail時重跑次數，Fail測試要是rerun設定的次數皆Fail才會判定Fail。  
+#       test
     with(open('./result.html', 'wb')) as fp:
         runner = HTMLTestRunner(
             stream=fp,
